@@ -1,0 +1,5 @@
+libffi-checklib-perl (0.15-1) jessie; urgency=low
+
+  * Initial Release. (Closes: #814274)
+
+ -- C.J. Collier <cjcollier@linuxfoundation.org>  Sat, 4 Jun 2016 20:04:13 -0400

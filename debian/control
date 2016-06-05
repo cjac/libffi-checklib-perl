@@ -1,0 +1,25 @@
+Source: libffi-checklib-perl
+Section: perl
+Priority: optional
+Maintainer: C.J. Collier <cjcollier@linuxfoundation.org>
+Build-Depends: debhelper (>= 9)
+Build-Depends-Indep: perl (>= 5.11.1)
+Standards-Version: 3.9.6
+Homepage: https://metacpan.org/release/FFI-CheckLib
+
+Package: libffi-checklib-perl
+Architecture: all
+Depends: ${misc:Depends}, ${perl:Depends}
+Description: Check that a library is available for FFI
+ FFI::CheckLib checks whether a particular dynamic library is available for
+ FFI to use. It is modeled heavily on Devel::CheckLib, but will find dynamic
+ libraries even when development packages are not installed. It also provides
+ a find_lib|FFI::CheckLib#find_lib function that will return the full path to
+ the found dynamic library, which can be feed directly into FFI::Platypus or
+ FFI::Raw.
+ .
+ Although intended mainly for FFI modules via FFI::Platypus and similar, this
+ module does not actually use any FFI to do its detection and probing. This
+ modules does not have any non-core dependencies on Perls 5.8-5.18. On Perl
+ 5.20 and newer it has a configure, build and test dependency on
+ Module::Build.
